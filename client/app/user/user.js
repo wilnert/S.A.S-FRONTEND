@@ -1,7 +1,7 @@
 (function() {
     'use strict';
 
-    angular.module('startUpApp')
+    angular.module('eventosSasApp')
     .config(config);
 
     config.$inject = ['$stateProvider'];

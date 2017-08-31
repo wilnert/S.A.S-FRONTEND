@@ -1,6 +1,6 @@
 (function () {
   'use strict';
-  angular.module('startUpApp')
+  angular.module('eventosSasApp')
   .factory('userService', userService);
   // permite injectar unas librerias de angular..
   userService.inject =["$resource","API"];

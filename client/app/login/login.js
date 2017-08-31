@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('startUpApp')
+angular.module('eventosSasApp')
   .config(function ($stateProvider) {
     $stateProvider
       .state('login', {
