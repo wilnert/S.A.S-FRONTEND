@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row">
+      <form name="formUser" class="Registry-formTextArea"  ng-submit="formUser.$valid && vm.createUser()" novalidate>
+
+          <select ng-model="vm.user.idTypeDocument.id" class="Text-typeId" required >
+            <option  value="" disabled selected >Tipo de documento</option>
+             <option ng-value="item.id" ng-repeat = "item in vm.typeDocument">{{item.name}}</option>
+          </select>
+
+
+    <div class="form-group">
+      <input type="text" ng-model="vm.user.name" class="form-control"  placeholder="Nombre" >
+      <input type="text" ng-model="vm.user.lastname" class="form-control"  placeholder="Apellidos" >
+      <input type="text" ng-model="vm.user.email" class="form-control"  placeholder="Correo" value="">
+      <input type="text" ng-model="vm.user.identification" class="form-control"  placeholder="Numero de Documento" >
+      <input type="text" ng-model="vm.user.password" class="form-control"  placeholder="Contraseña" >
+
+
+      <button type="submit" class="btn btn-success" ng-disabled="userForm.$invaled" ng-model="vm.user.password" class="form-control" >
+
+      </div>
+    </form>
+
+  </div>
+
+</div>

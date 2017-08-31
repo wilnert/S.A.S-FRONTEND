@@ -5,7 +5,6 @@
 			this.$stateParams = $stateParams;
 			this.userService = userService;
 			this.$state = $state;
-			//this.$auth=$auth;
 			}
 			$onInit(){
 				//this.userService.get({id:this.$auth.getPayload().sub}).$promise
@@ -17,7 +16,7 @@
 			}
 
 			update(){
-				
+
 				this.userService.update({idUser:this.$stateParams.idUser},this.user).$promise
 				.then(response => {
 					this.user = response;
@@ -28,8 +27,8 @@
 			}
 
 		}
-		UserViewComponent.$inject=['userService','$stateParams','$state'];
-angular.module('startUpApp')
+UserViewComponent.$inject=['userService','$stateParams','$state'];
+angular.module('eventosSasApp')
 	.component('userView',{
 		templateUrl:"app/user/user-view/user-view.html",
 		controller:UserViewComponent,

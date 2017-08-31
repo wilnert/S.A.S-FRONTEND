@@ -5,100 +5,16 @@
   </div>
   <div class="Userupdate-productUser">
     <div class="Userupdate-dividir"></div>
-    <!-- <div class=" Userupdate-imageContainer">
-
-      <div>
-       <label for="foto-input">
-                    Subir Foto
-             </label>
-       <input type="file" id="foto-input" style="visibility:hidden;" accept="image/*" on-read-img="vm.imageLoad($fileContent)">
-      </div>
-      <div class="cropArea  img-responsive">
-       <img-crop image="vm.image" result-image="vm.croppedImage" area-type="rectangle" aspect-ratio="1.6" init-max-area="true" result-image-size='{w: 400,h: 250}' chargement="'Cargando'">
-       </img-crop>
-      </div>
-
-    </div> -->
-
-    <!--<button ng-model="vm.user.activ" ng-click="vm.user.activ = !vm.user.activ" ng-init="vm.user.activ">Bloquear</button>
-    <input class="Registry-user" type="submit" ng-model="vm.user.activ" >-->
     <div class="Userupdate-informationContainer" >
-
-      <div class=" Userupdate-imageContainer">
-
-
-        <div class="cropArea  img-responsive">
-         <img-crop image="vm.image" result-image="vm.croppedImage" area-type="rectangle" aspect-ratio="1.6" init-max-area="true" result-image-size='{w: 400,h: 250}' chargement="'Cargando'">
-         </img-crop>
-        </div>
-
-      </div>
-      <div>
-       <label for="foto-input">
-                    Subir Foto
-             </label>
-       <input type="file" id="foto-input" style="visibility:hidden;" accept="image/*" on-read-img="vm.imageLoad($fileContent)">
-      </div>
-
 
 
       <form class="Userupdate-informationMenuContainer" ng-submit="vm.update()" novalidate>
         <input class="Userupdate-inputContainer" ng-model="vm.user.name" placeholder="Nombre" >
         <input class="Userupdate-inputContainer" ng-model="vm.user.lastname" placeholder="Apellidos" >
-        <input class=" Userupdate-inputContainer" ng-model="vm.user.adress" placeholder="Direccion" >
-        <input class=" Userupdate-inputContainer" ng-model="vm.user.idCity.name" placeholder="Ciudad">
-        <input class=" Userupdate-inputContainer" ng-model="vm.user.phone" placeholder="Telefono"></textarea>
+        <input class=" Userupdate-inputContainer" ng-model="vm.user.identification" placeholder="Numero de documento" >
         <input  class="Userupdate-saveButtom"type="submit" name="" value="Guardar cambios ">
       </form>
       <div class="Userupdate-dividirForm"></div>
     </div>
-  </div>
-</section>
-<section class="Userupdate-productSeccion">
-  <div class="Userupdate-containerTitleTwo">
-    <h2 class="Userupdate-tittleTwo"> Productos</h2>
-  </div>
-  <div class="Userupdate-products">
-    <div class="Userupdate-dividirProduct"></div>
-    <div class="Userupdate-ProductContainer">
-
-      <img  class="Userupdate-productImage" src="../../../assets/images/images-user/imagenNoDisponible.jpg" >
-      <div class="Userupdate-containerDescripton">
-        <i class="fa fa-times-circle Userupdate-productIcon" aria-hidden="true"></i>
-        <i class="fa fa-pencil-square Userupdate-productIconTwo" aria-hidden="true"></i>
-
-      </div>
-
-      <h3 class="Userupdate-productDescription">Descripcion</h3>
-      <p class="Userupdate-productInformation">Producto sin infomacion </p>
-
-    </div>
-    <div class="Userupdate-ProductContainer">
-
-      <img  class="Userupdate-productImage" src="../../../assets/images/images-user/imagenNoDisponible.jpg" >
-      <div class="Userupdate-containerDescripton">
-        <i class="fa fa-times-circle Userupdate-productIcon" aria-hidden="true"></i>
-        <i class="fa fa-pencil-square Userupdate-productIconTwo" aria-hidden="true"></i>
-
-      </div>
-
-      <h3 class="Userupdate-productDescription">Descripcion</h3>
-      <p class="Userupdate-productInformation">Producto sin infomacion </p>
-
-    </div>
-    <div class="Userupdate-ProductContainer">
-
-      <img  class="Userupdate-productImage" src="../../../assets/images/images-user/imagenNoDisponible.jpg" >
-      <div class="Userupdate-containerDescripton">
-        <i class="fa fa-times-circle Userupdate-productIcon" aria-hidden="true"></i>
-        <i class="fa fa-pencil-square Userupdate-productIconTwo" aria-hidden="true"></i>
-
-      </div>
-
-      <h3 class="Userupdate-productDescription">Descripcion</h3>
-      <p class="Userupdate-productInformation">Producto sin infomacion </p>
-
-    </div>
-    <div class="Userupdate-dividirProductTwo"></div>
   </div>
 </section>
