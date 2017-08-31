@@ -3,7 +3,7 @@
 describe('Component: LoginComponent', function () {
 
   // load the controller's module
-  beforeEach(module('startUpApp'));
+  beforeEach(module('eventosSasApp'));
 
   var LoginComponent, scope;
 

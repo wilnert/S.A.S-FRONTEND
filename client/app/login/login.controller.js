@@ -20,7 +20,7 @@ class LoginComponent {
 
 }
 LoginComponent.$inject = ['AuthService','$state'];
-angular.module('startUpApp')
+angular.module('eventosSasApp')
   .component('login', {
     templateUrl: 'app/login/login.html',
     controller: LoginComponent,
