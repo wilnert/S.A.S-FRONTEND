@@ -1,0 +1,30 @@
+<section class="Login-body" ng-submit="">
+
+  <div class="Login-pageContainer">
+    <div class="Login-containerTitle">
+      <h2 class="Login-title">Iniciar Sesion</h2>
+    </div>
+    <div class="Login-containerForm">
+      <form class="Login-form" ng-submit="vm.login()">
+
+        <input type="text" name="username"  placeholder="Usuario" class="Login-input" ng-model="vm.user.email" required ><i class="fa fa-user Login-user" aria-hidden="true"></i>
+
+        <input type="password" name="password" id="password1" placeholder="Contraseña" class="Login-input" ng-model="vm.user.password" required><i class="fa fa-lock Login-lock" aria-hidden="true"></i>
+        <div class="PasswordView">
+          <input type="checkbox" onchange="document.getElementById('password1').type = this.checked ? 'text' : 'password'">
+          <p>Ver Contraseña</p>
+
+        </div>
+        <button type="submit" class="Login-button">Iniciar</button>
+
+            <a href="recoverPassword" class="RecoverPassword">¿Olvidaste tu contraseña?</a>
+            <a href="user-create" class="RegistryLogin">Registrate</a>
+
+      </form>
+    </div>
+    <div>
+
+
+
+    </div>
+</section>
