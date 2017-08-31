@@ -2,7 +2,7 @@
 'use strict';
 
 
-angular.module("startUpApp")
+angular.module("eventosSasApp")
 .factory('AuthService', AuthService);
 
 AuthService.$inject  = ['$auth','$state'];
