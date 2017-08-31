@@ -7,6 +7,10 @@
              <option ng-value="item.id" ng-repeat = "item in vm.typeDocument">{{item.description}}</option>
           </select>
 
+          <select class="form-control" ng-model="vm.rol" class="Text-typeId" required >
+            <option  value="" disabled selected >Rol</option>
+             <option ng-value="item.id" ng-repeat = "item in vm.roles">{{item.description}}</option>
+          </select>
 
     <div class="form-group">
       <input type="text" ng-model="vm.user.name" class="form-control"  placeholder="Nombre" >
@@ -16,8 +20,7 @@
       <input type="text" ng-model="vm.user.password" class="form-control"  placeholder="Contraseña" >
 
 
-      <button type="submit" class="btn btn-success" ng-disabled="userForm.$invaled" ng-model="vm.user.password" class="form-control" name="Guardar">
-
+      <button type="submit" class="btn btn-success" ng-disabled="userForm.$invaled"  class="form-control" name="Guardar" >guardar</button>
       </div>
     </form>
 

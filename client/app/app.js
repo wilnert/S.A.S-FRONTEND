@@ -8,7 +8,7 @@ angular.module('eventosSasApp', [
   'ui.router',
   'satellizer'
 ])
- .constant("API","http://localhost:8080/")
+ .constant("API","http://localhost:8080/S.A.S-BACKEND")
  .config(function($urlRouterProvider, $locationProvider,$authProvider,API) {
    $urlRouterProvider.otherwise('/');
    //configurar satellizer
