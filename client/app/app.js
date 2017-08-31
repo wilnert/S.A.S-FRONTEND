@@ -15,7 +15,7 @@ angular.module('eventosSasApp', [
 
    $authProvider.loginUrl = API + '/api/auth/login';
    $authProvider.tokenName = 'token';
-   $authProvider.tokenPredix = 'eventosSas';
+   $authProvider.tokenPrefix = 'eventosSas';
 
    $locationProvider.html5Mode(true);
  });

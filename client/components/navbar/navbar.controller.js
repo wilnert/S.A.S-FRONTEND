@@ -1,15 +1,19 @@
 'use strict';
 
 class NavbarController {
-  //start-non-standard
-  menu = [{
-    'title': 'Home',
-    'state': 'main'
-  }];
+  constructor(AuthService){
+    //start-non-standard
+    this.menu = [{
+      'title': 'Home',
+      'state': 'main'
+    }];
 
-  isCollapsed = true;
-  //end-non-standard
+    this.isCollapsed = true;
+    //end-non-standard
+   this.AuthService=AuthService;
 
+console.log("rol",this.AuthService.isAdmin());
+  }
 
 }
 
