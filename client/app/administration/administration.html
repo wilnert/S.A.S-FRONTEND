@@ -1,38 +1,43 @@
-<div class="User-listContainer">
+<div class="Container">
+	<div class="container">
+		<div class="User-listContainer">
 
-<section class="User-listContainer">
+			<section class="User-listContainer">
 
-<h3> LISTADO DE USUARIOS </h3>
+				<h3> LISTADO DE ASISTENCIA</h3>
 
-<table class="table table-bordered table-hover table-condensed">
-	<thead class="thead-inverse">
-		<tr class="info">
-						<th class="text-center text-uppercase">Nombre</th><!--columnas en una tabla -->
-						<th class="text-center text-uppercase">Apellido</th>
+				<table class="table table-hover table-condensed">
+					<thead class="thead-inverse">
+						<tr class="active">
+							<th class="text-center text-uppercase">Nombre</th>
+							<!--columnas en una tabla -->
+							<th class="text-center text-uppercase">Apellido</th>
 
-						<!--<th class="text-center text-uppercase">Contraseña</th>-->
+							<!--<th class="text-center text-uppercase">Contraseña</th>-->
 
-					</tr>
-	</thead>
-	<tbody>
-		<tr ng-repeat="item in vm.user">
-			<td class="text-center">
-			<a  ui-sref="user-view({id:item.id})">{{ item.name }} </a>
-			</td class="text-center">
-			<td class="text-center">{{ item.lastname}}</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="item in vm.user">
+							<td class="text-center">
+								<a ui-sref="user-view({id:item.id})">{{ item.name }} </a>
+							</td class="text-center">
+							<td class="text-center">{{ item.lastname}}</td>
 
-    </td>
+							</td>
 
-		</tr>
-		<h4>
-			Total de usuarios: {{vm.user.length}}
+						</tr>
+						<h4 class="text-muted">
+							Total de usuarios: {{vm.user.length}}
 
-		</h4>
+						</h4>
 
-	</tbody>
-</table>
+					</tbody>
+				</table>
 
-</section>
+			</section>
 
 
+		</div>
+	</div>
 </div>
