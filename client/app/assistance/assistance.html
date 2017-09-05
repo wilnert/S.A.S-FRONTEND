@@ -1,1 +1,34 @@
-<div>This is the assistance view.</div>
+<div class="Container">
+	<div class="container">
+		<table class="table table-hover table-condensed TableAssitance">
+			<thead class="thead-inverse">
+				<tr class="active">
+					<th class="text-center text-uppercase">Nombre</th>
+					<!--columnas en una tabla -->
+					<th class="text-center text-uppercase">Apellido</th>
+					<th class="text-center text-uppercase">Asistio?</th>
+
+					<!--<th class="text-center text-uppercase">Contraseña</th>-->
+
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="item in vm.user">
+					<td class="text-center">
+						<a ui-sref="user-view({id:item.id})">{{ item.name }} </a>
+					</td class="text-center">
+					<td class="text-center">{{ item.lastname}}</td>
+
+					</td>
+					<td class="text-center"><input type="checkbox" ng-change="vm.modify(item)" ng-model="item.active" name="name"></td>
+
+					</td>
+
+				</tr>
+
+				<small> <h3 class="lead text-muted">Total de usuarios: <span class="badge">{{vm.user.length}}</span></h3></small>
+
+			</tbody>
+		</table>
+	</div>
+</div>

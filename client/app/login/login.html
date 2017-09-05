@@ -1,30 +1,57 @@
-<section class="Login-body" ng-submit="">
+<div class="FondoLogin">
 
-  <div class="Login-pageContainer">
-    <div class="Login-containerTitle">
-      <h2 class="Login-title">Iniciar Sesion</h2>
+  <div class="container formulario ">
+    <div class="row hidden-xs">
+      <div class="col-xs-4 col-xs-offset-4  ">
+        <img src="../assets/images/yeoman.png" class="logo center-block">
+      </div>
     </div>
-    <div class="Login-containerForm">
-      <form class="Login-form" ng-submit="vm.login()">
 
-        <input type="text" name="username"  placeholder="Usuario" class="Login-input" ng-model="vm.user.email" required ><i class="fa fa-user Login-user" aria-hidden="true"></i>
+    <div class="espaciado">
 
-        <input type="password" name="password" id="password1" placeholder="Contraseña" class="Login-input" ng-model="vm.user.password" required><i class="fa fa-lock Login-lock" aria-hidden="true"></i>
-        <div class="PasswordView">
-          <input type="checkbox" onchange="document.getElementById('password1').type = this.checked ? 'text' : 'password'">
-          <p>Ver Contraseña</p>
+    </div>
 
-        </div>
-        <button type="submit" class="Login-button">Iniciar</button>
+    <div class="row">
+      <fieldset class="col-xs-10 col-xs-offset-1">
+        <legend>
+          <h3 class="LogiTitle">inicio de sesi&oacute;n</h3>
+        </legend>
 
+        <form role="form" class="form-horizontal" ng-submit="vm.login()">
+          <div class="form-group">
+            <div class="col-xs-10 col-xs-offset-1 input-group">
+              <input type="text" name="username" placeholder="Usuario" class="form-control Input" ng-model="vm.user.email" required>
+              <span class="input-group-addon InputLoginIcon"><i class="fa fa-user Login-user" aria-hidden="true"></i></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="col-xs-10 col-xs-offset-1 input-group">
+              <input type="password" name="password" id="password1" placeholder="Contraseña" class="form-control col-xs-12 Input" ng-model="vm.user.password"
+                required>
+              <span class="input-group-addon InputLoginIcon"><i class="fa fa-lock Login-lock" aria-hidden="true"></i></span>
+            </div>
+          </div>
+
+          <div class="has-warning">
+            <div class="checkbox">
+              <div class="PasswordView CheckBox">
+                <input class="has-warning" focus type="checkbox" onchange="document.getElementById('password1').type = this.checked ? 'text' : 'password'">
+                <p class="text-denger ">Ver Contraseña</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group text-center">
+            <button type="submit" class="btn btn-danger center-block">Iniciar</button>
             <a href="recoverPassword" class="RecoverPassword">¿Olvidaste tu contraseña?</a>
-            <a href="user-create" class="RegistryLogin">Registrate</a>
+            <a href="user-create" class="RegistryLogin col-md-offset-1 col-xs-offset-1">Registrate</a>
 
-      </form>
+          </div>
+
+        </form>
+      </fieldset>
+
     </div>
-    <div>
-
-
-
-    </div>
-</section>
+  </div>
+</div>

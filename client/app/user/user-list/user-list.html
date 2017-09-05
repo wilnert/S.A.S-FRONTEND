@@ -1,16 +1,19 @@
-<div class="User-listContainer">
+<div class="User-listContainer UserListMargin">
 
-<section class="User-listContainer">
+	<section class="User-listContainer">
 
-<h3> LISTADO DE USUARIOS </h3>
+		<h3> LISTADO DE USUARIOS </h3>
 
-<table class="table table-bordered table-hover">
-	<thead class="thead-inverse">
-		<tr>
-						<th class="text-center text-uppercase">Nombre</th><!--columnas en una tabla -->
+		<div class="table-responsive">
+			<table class="table table-bordered table-hover table-condensed">
+				<thead class="thead-inverse">
+					<tr class="info">
+						<th class="text-center text-uppercase">Nombre</th>
+						<!--columnas en una tabla -->
 						<th class="text-center text-uppercase">Apellido</th>
 						<th class="text-center text-uppercase">Correo</th>
-						<th class="text-center text-uppercase"># Documento</th><!--columnas en una tabla -->
+						<th class="text-center text-uppercase"># Documento</th>
+						<!--columnas en una tabla -->
 						<th class="text-center text-uppercase">Dirección</th>
 						<th class="text-center text-uppercase">Genero</th>
 						<th class="text-center text-uppercase">Estado</th>
@@ -18,37 +21,38 @@
 						<!--<th class="text-center text-uppercase">Contraseña</th>-->
 
 					</tr>
-	</thead>
-	<tbody>
-		<tr ng-repeat="item in vm.user">
-			<td class="text-center">
-			<a  ui-sref="user-view({id:item.id})">{{ item.name }} </a>
-			</td class="text-center">
-			<td class="text-center">{{ item.lastname}}</td>
-			<td class="text-center">{{ item.email}}</td>
-			<td class="text-center">{{ item.numDocument}}</td>
-			<td class="text-center">{{ item.adress}}</td>
-			<td class="text-center">{{ item.gender}}</td>
+				</thead>
+				<tbody>
+					<tr ng-repeat="item in vm.user">
+						<td class="text-center">
+							<a ui-sref="user-view({id:item.id})">{{ item.name }} </a>
+						</td class="text-center">
+						<td class="text-center">{{ item.lastname}}</td>
+						<td class="text-center">{{ item.email}}</td>
+						<td class="text-center">{{ item.numDocument}}</td>
+						<td class="text-center">{{ item.adress}}</td>
+						<td class="text-center">{{ item.gender}}</td>
 
-				</td>
-
-
-				<td class="text-center">
-					<button class="btn btn-success" ng-if="item.activ" ng-click="vm.changeStatus(item)">Deshabilitar</button>
-					<button class="btn btn-warning" ng-if="!item.activ" ng-click="vm.changeStatus(item)">Habilitar</button>
-			</td>
+						</td>
 
 
-		</tr>
-		<h4>
-			Total de usuarios: {{vm.user.length}}
+						<td class="text-center">
+							<button class="btn btn-success" ng-if="item.activ" ng-click="vm.changeStatus(item)">Deshabilitar</button>
+							<button class="btn btn-warning" ng-if="!item.activ" ng-click="vm.changeStatus(item)">Habilitar</button>
+						</td>
 
-		</h4>
 
-	</tbody>
-</table>
+					</tr>
+					<h4>
+						Total de usuarios: {{vm.user.length}}
 
-</section>
+					</h4>
+
+				</tbody>
+			</table>
+		</div>
+
+	</section>
 
 
 </div>

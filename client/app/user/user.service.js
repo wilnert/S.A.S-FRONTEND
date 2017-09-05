@@ -25,12 +25,10 @@
             method:'POST',
 
           },
-          sendPassword:{
-                url:API+'/api/users/updatepass/:id',
-                method:'PUT',
-                params:{
-                  id:'@id'
-                }
+          getAssis:{
+                url:API+'/api/users/assistance',
+                method:'GET',
+                isArray:true
 
               }
 
